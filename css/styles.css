@@ -3,6 +3,11 @@
   src: url('../fonts/Living-Colours.ttf');
 }
 
+@font-face {
+  font-family: 'Coco-Gothic';
+  src: url('../fonts/Coco-Gothic.ttf');
+}
+
 body {
   background: rgba(186,54,208, 1); /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left, rgba(138, 243, 255, .5), rgba(186,54,208, .3)); /* For Safari 5.1 to 6.0 */
@@ -16,4 +21,37 @@ h1 {
   text-align: center;
   margin-top: 50px;
   font-size: 50px;
+}
+
+h4, h3, p, li {
+  font-family: 'Coco-Gothic';
+}
+
+h5 {
+  font-family: 'Living Colours';
+  font-size: 18px;
+}
+
+.masthead {
+  position: fixed;
+  width: 100%;
+
+}
+
+.menu-bar {
+  width: 98%;
+  border: 1px solid black;
+  overflow: auto;
+  height: 60px;
+  background: white;
+}
+
+.menu-bar h5 {
+  float: left;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+#product-image {
+  width: 600px;
 }
