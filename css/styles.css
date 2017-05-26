@@ -61,17 +61,38 @@ a:hover {
   color: rgba(186,54,208, 1);
 }
 
+table {
+  position: absolute;
+  top: 230px;
+  left: 370px;
+  z-index: 3;
+  border-spacing: 0.5rem;
+  /*border-collapse: collapse;*/
+  /*border: 1px solid black;*/
+  margin: 0 auto;
+  border-radius: 5px;
+  font-family: 'Coco-Gothic';
+  font-size: 12px;
+}
+
+th {
+  border: 1px solid black;
+  padding-left: 0.5rem;
+  padding-right: 0.5em;
+  text-align: left;
+}
+
 .masthead {
   position: fixed;
   box-shadow: 0px 6px 6px rgba(108, 108, 109, 0.2);
   width: 100%;
-  z-index: 9000;
+  z-index: 1;
   padding-left: 5px;
-  background: rgba(186,54,208, 1); /* For browsers that do not support gradients */
+  background: rgba(186,54,208, 1); /* For browsers that do not support gradients
   background: -webkit-linear-gradient(left, rgba(138, 243, 255, 1), rgba(186,54,208, 1)); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(right, rgba(138, 243, 255, 1), rgba(186,54,208, 1)); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(right, rgba(138, 243, 255, 1), rgba(186,54,208, 1)); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, rgba(138, 243, 255, 1), rgba(186,54,208, 1)); /* Standard syntax */
+  background: linear-gradient(to right, rgba(138, 243, 255, 1), rgba(186,54,208, 1)); /* Standard syntax */*/
 }
 
 .container {
@@ -94,8 +115,12 @@ a:hover {
   padding-right: 7%;
 }
 
-.gallery-image {
+.description {
   position: absolute;
+  font-family: 'Coco-Gothic';
+  font-size: 12px;
+  font-style: italic;
+  display: none;
 }
 
 #product-image {
@@ -128,6 +153,12 @@ a:hover {
   padding: 5px;
 }
 
+#size-info {
+  position: absolute;
+  left: 310px;
+  top: 235px;
+}
+
 #color-size-info {
   position: absolute;
   top: 200px;
@@ -154,13 +185,25 @@ a:hover {
   margin-right: 40px;
 }
 
+#shirt-description {
+  left: 33px;
+}
+
 #renee-sunglasses {
   float: left;
   margin-right: 40px;
 }
 
+#renee-description {
+  left: 225px;
+}
+
 #speaker {
   float: left;
+}
+
+#speaker-description {
+  left: 415px;
 }
 
 #slay {
@@ -170,14 +213,38 @@ a:hover {
   margin-right: 40px;
 }
 
+#slay-description {
+  left: 33px;
+  top: 150px;
+}
+
 #timeless-sunglasses {
   margin-top: 5px;
   float: left;
   margin-right: 40px;
 }
 
+#timeless-description {
+  left: 225px;
+  top: 150px;
+}
+
 #cactus {
   margin-top: 5px;
   float: left;
   margin-right: 10px;
+}
+
+#cactus-description {
+  left: 415px;
+  top: 150px;
+}
+
+.hover-image:hover {
+  box-shadow: 0px 0px 100px rgb(138, 243, 255);
+
+}
+
+.hover-image:hover ~ .description {
+  display:inline;
 }
