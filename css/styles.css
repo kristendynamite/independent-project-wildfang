@@ -45,6 +45,15 @@ h4, h3, p, li {
 h5 {
   font-family: 'Living Colours';
   font-size: 18px;
+  vertical-align: middle;
+  padding: 0;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  /*padding-bottom: 2px;*/
+}
+
+h5:hover {
+  color: rgb(186,54,208);
 }
 
 p, li {
@@ -82,6 +91,10 @@ th {
   text-align: left;
 }
 
+th:nth-of-type(4n+1) {
+  background: grey;
+}
+
 .masthead {
   position: fixed;
   box-shadow: 0px 6px 6px rgba(108, 108, 109, 0.2);
@@ -104,7 +117,7 @@ th {
   width: 98%;
   border: 1px solid black;
   overflow: auto;
-  height: 65px;
+  height: auto;
   background: white;
   margin-right: 10px;
 }
@@ -129,6 +142,18 @@ th {
   margin-left: 20px;
 }
 
+#product-image-hover {
+  width: 650px;
+  margin-top: 205px;
+  margin-left: 20px;
+  position: absolute;
+  z-index: -1;
+}
+
+/*#product-image:hover{
+  display: none;
+}*/
+
 #caption {
   background: black;
   color: white;
@@ -147,7 +172,7 @@ th {
   left: 700px;
   border-style: dashed;
   border-width: thin;
-  width: 594px;
+  width: 100%;
   background: white;
   font-size: 14px;
   padding: 5px;
@@ -171,7 +196,7 @@ th {
   left: 700px;
   float: right;
   border: solid 1px black;
-  width: 590px;
+  width: 610px;
   background: rgba(255, 255, 255, 1);
   padding-left: 15px;
   padding-top: 0px;
@@ -241,7 +266,8 @@ th {
 }
 
 .hover-image:hover {
-  box-shadow: 0px 0px 100px rgb(138, 243, 255);
+  box-shadow: 0px 0px 100px rgb(14, 185, 210);
+  border: 1px solid rgb(14, 185, 210);
 
 }
 
