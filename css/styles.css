@@ -8,12 +8,18 @@
   src: url('../fonts/Coco-Gothic.ttf');
 }
 
+@font-face {
+  font-family: 'Coco-Light';
+  src: url('../fonts/Coco-Light.ttf');
+}
+
 body {
+  position: relative;
   background: rgba(186,54,208, 1); /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, rgba(138, 243, 255, .5), rgba(186,54,208, .3)); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, rgba(138, 243, 255, .5), rgba(186,54,208, .3)); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, rgba(138, 243, 255, .5), rgba(186,54,208, .3)); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, rgba(138, 243, 255, .5), rgba(186,54,208, .3)); /* Standard syntax */
+  background: -webkit-linear-gradient(left, rgba(138, 243, 255, .5), rgba(186,54,208, .9)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(138, 243, 255, .5), rgba(186,54,208, .9)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(138, 243, 255, .5), rgba(186,54,208, .9)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(138, 243, 255, .5), rgba(186,54,208, .9)); /* Standard syntax */
 }
 
 h1 {
@@ -32,10 +38,33 @@ h5 {
   font-size: 18px;
 }
 
+p, li {
+  font-family: 'Coco-Light';
+  font-size: 1.1em;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: rgba(186,54,208, 1);
+}
+
 .masthead {
   position: fixed;
   width: 100%;
+  z-index: 9000;
+  background: rgba(186,54,208, 1); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, rgba(138, 243, 255, 1), rgba(186,54,208, 1)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(138, 243, 255, 1), rgba(186,54,208, 1)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(138, 243, 255, 1), rgba(186,54,208, 1)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(138, 243, 255, 1), rgba(186,54,208, 1)); /* Standard syntax */
+}
 
+.container {
+  position: absolute;
 }
 
 .menu-bar {
@@ -44,6 +73,7 @@ h5 {
   overflow: auto;
   height: 60px;
   background: white;
+  margin-right: 10px;
 }
 
 .menu-bar h5 {
@@ -54,4 +84,77 @@ h5 {
 
 #product-image {
   width: 600px;
+  margin-top: 205px;
+  margin-left: 20px;
+}
+
+#caption {
+  background: black;
+  color: white;
+  width: 80px;
+  text-align: center;
+  padding: 2px;
+  position: absolute;
+  left: 455px;
+  top: 210px;
+  font-size: 30px;
+}
+
+#product-info {
+  position: absolute;
+  top: 205px;
+  left: 700px;
+  border-style: dashed;
+  border-width: thin;
+  width: 594px;
+  background: white;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.gallery {
+  position: absolute;
+  top: 500px;
+  left: 700px;
+  float: right;
+  border: solid 1px black;
+  width: 590px;
+  background: rgba(255, 255, 255, 1);
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-right: 0;
+}
+
+#shirt {
+  float: left;
+  margin-left: 25px;
+  margin-right: 40px;
+}
+
+#renee-sunglasses {
+  float: left;
+  margin-right: 40px;
+}
+
+#speaker {
+  float: left;
+}
+
+#slay {
+  float: left;
+  margin-top: 5px;
+  margin-left: 25px;
+  margin-right: 40px;
+}
+
+#timeless-sunglasses {
+  margin-top: 5px;
+  float: left;
+  margin-right: 40px;
+}
+
+#cactus {
+  margin-top: 5px;
+  float: left;
+  margin-right: 10px;
 }
