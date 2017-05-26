@@ -14,7 +14,10 @@ OR you can:
 * Open the file folder and double click on 'index.html'
 
 ## Bugs:
-I am trying to apply an effect that changes the main product image when a user hovers or clicks on it to an image that shows another angle of the product. Other than that, there are no known bugs at this time.
+There are no known bugs at this time.
+
+## Wishlist:
+Elements on right-hand-side of screen need to be centered within their portion of the screen. I want to apply an effect that changes the main product image when a user hovers or clicks on it to an image that shows another angle of the product. 
 
 ## Support:
 If you experience any difficulties, feel free to contact Kristen (kristen.dynamite@gmail.com)
