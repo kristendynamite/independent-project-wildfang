@@ -1,3 +1,12 @@
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
 @font-face {
   font-family: 'Living Colours';
   src: url('../fonts/Living-Colours.ttf');
@@ -16,10 +25,10 @@
 body {
   position: relative;
   background: rgba(186,54,208, 1); /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, rgba(138, 243, 255, .5), rgba(186,54,208, .9)); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, rgba(138, 243, 255, .5), rgba(186,54,208, .9)); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, rgba(138, 243, 255, .5), rgba(186,54,208, .9)); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, rgba(138, 243, 255, .5), rgba(186,54,208, .9)); /* Standard syntax */
+  background: -webkit-linear-gradient(left, rgba(138, 243, 255, 1), rgba(186,54,208, .9)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(138, 243, 255, 1), rgba(186,54,208, .9)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(138, 243, 255, 1), rgba(186,54,208, .9)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(138, 243, 255, 1), rgba(186,54,208, .9)); /* Standard syntax */
 }
 
 h1 {
@@ -54,8 +63,10 @@ a:hover {
 
 .masthead {
   position: fixed;
+  box-shadow: 0px 6px 6px rgba(108, 108, 109, 0.2);
   width: 100%;
   z-index: 9000;
+  padding-left: 5px;
   background: rgba(186,54,208, 1); /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left, rgba(138, 243, 255, 1), rgba(186,54,208, 1)); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(right, rgba(138, 243, 255, 1), rgba(186,54,208, 1)); /* For Opera 11.1 to 12.0 */
@@ -65,13 +76,14 @@ a:hover {
 
 .container {
   position: absolute;
+  vertical-align: middle;
 }
 
 .menu-bar {
   width: 98%;
   border: 1px solid black;
   overflow: auto;
-  height: 60px;
+  height: 65px;
   background: white;
   margin-right: 10px;
 }
@@ -82,8 +94,12 @@ a:hover {
   padding-right: 7%;
 }
 
+.gallery-image {
+  position: absolute;
+}
+
 #product-image {
-  width: 600px;
+  width: 650px;
   margin-top: 205px;
   margin-left: 20px;
 }
@@ -112,6 +128,12 @@ a:hover {
   padding: 5px;
 }
 
+#color-size-info {
+  position: absolute;
+  top: 200px;
+  left: 300px;
+}
+
 .gallery {
   position: absolute;
   top: 500px;
@@ -121,8 +143,9 @@ a:hover {
   width: 590px;
   background: rgba(255, 255, 255, 1);
   padding-left: 15px;
-  padding-top: 15px;
+  padding-top: 0px;
   padding-right: 0;
+  font-size: 14px;
 }
 
 #shirt {
