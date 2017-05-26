@@ -91,7 +91,7 @@ th {
   text-align: left;
 }
 
-th:nth-of-type(4n+1) {
+th:nth-of-type(3n+1) {
   background: grey;
 }
 
@@ -150,10 +150,6 @@ th:nth-of-type(4n+1) {
   z-index: -1;
 }
 
-/*#product-image:hover{
-  display: none;
-}*/
-
 #caption {
   background: black;
   color: white;
@@ -202,6 +198,8 @@ th:nth-of-type(4n+1) {
   padding-top: 0px;
   padding-right: 0;
   font-size: 14px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 #shirt {
