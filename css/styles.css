@@ -159,6 +159,10 @@ th:nth-of-type(3n+1) {
   margin-bottom: 20px;
 }
 
+#product {
+  position: relative;
+}
+
 #product-image {
   width: 650px;
   margin-top: 205px;
@@ -176,13 +180,18 @@ th:nth-of-type(3n+1) {
 #caption {
   background: black;
   color: white;
-  width: 80px;
   text-align: center;
   padding: 2px;
   position: absolute;
   left: 455px;
   top: 210px;
   font-size: 30px;
+}
+
+a:hover::after {
+  content: " + HOT";
+  background-color: none;
+
 }
 
 #product-info {
