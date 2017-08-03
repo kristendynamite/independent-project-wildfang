@@ -6,7 +6,7 @@
 
 This page showcases a product for sale for the brand Wildfang, includes a list of product features, a product image that contains an absolutely positioned element, a table for product sizing, and a gallery of smaller related images. Floats, pseudo-elements, selectors, and various other CSS classes are used.
 
-<img src="https://raw.githubusercontent.com/kristendynamite/club-manager/master/img/Epicodus CSS Wildfang Project Screenshot.png">
+<img src="https://raw.githubusercontent.com/kristendynamite/independent-project-wildfang/master/img/epicodus-wildfang-screenshot.png">
 
 ### Set Up & Installation:
 * Visit the following link: <https://kristendynamite.github.io/independent-project-wildfang/>
